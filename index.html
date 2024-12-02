@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vinyl Revival</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="container">
+		<header>
+			<div class="logo-wrap">
+				<div class="logo"></div>
+				<img src="img/Vinyl Revival.png" alt="logo">
+			</div>
+			<nav class="desktop-menu">
+				<a href="#" class="oldradio-button">Жанри</a>
+				<a href="#" class="oldradio-button">Роки</a>
+				<a href="#" class="oldradio-button">Видавництва</a>
+				<a href="#" class="oldradio-button">Виконавці</a>
+			</nav>
+			<div class="search-bar">
+				<input type="text" placeholder="Пошук...">
+				<button><img src="img/search.png" class="search-icon"></button>
+			</div>
+			<button class="login-button">Увійти</button>
+			<div class="mobile-menu-wrapper">
+				<button class="mobile-menu-button">≡</button>
+				<div class="overlay"></div>
+				<nav class="mobile-menu">
+					<button class="login-button mobile-login">Увійти</button>
+					<a href="#" class="oldradio-button">Жанри</a>
+					<a href="#" class="oldradio-button">Роки</a>
+					<a href="#" class="oldradio-button">Видавництва</a>
+					<a href="#" class="oldradio-button">Виконавці</a>
+					<a href="#" class="oldradio-button">Головна</a>
+					<a href="#" class="oldradio-button">Про нас</a>
+					<a href="#" class="oldradio-button">Контакти</a>
+					<a href="#" class="oldradio-button">Запитання</a>
+				</nav>
+			</div>
+		</header>
+		<main>
+			<div class="content">
+				<div class="card">
+					<img src="img/PF.jpg" alt="DSOTM">
+					<h2>Pink Floyd</h2>
+					<p>Платівка альбому "Dark Side Of The Moon"</p>
+					<p class="price">5450 грн</p>
+					<button>Замовити</button>
+				</div>
+				<div class="card">
+					<img src="img/TDB.jfif" alt="TDB">
+					<h2>Pink Floyd</h2>
+					<p>Платівка альбому "The Division Bell"</p>
+					<p class="price">5450 грн</p>
+					<button>Замовити</button>
+				</div>
+				<div class="card">
+					<img src="img/PinkFloydAnimals.jpg" alt="Animals">
+					<h2>Pink Floyd</h2>
+					<p>Платівка альбому "Animals"</p>
+					<p class="price">5400 грн</p>
+					<button>Замовити</button>
+				</div>
+				<div class="card">
+					<img src="img/sm.jpg" alt="Scary Monsters">
+					<h2>David Bowie</h2>
+					<p>Платівка альбому "Scary Monsters"</p>
+					<p class="price">4200 грн</p>
+					<button>Замовити</button>
+				</div>
+				<div class="card">
+					<img src="img/LZM.jpg" alt="Mothership">
+					<h2>Led Zeppelin</h2>
+					<p>Платівка альбому "Mothership"</p>
+					<p class="price">5200 грн</p>
+					<button>Замовити</button>
+				</div>
+				<div class="card">
+					<img src="img/WFTS.jfif" alt="WFTS">
+					<h2>The Doors</h2>
+					<p>Платівка альбому "Waiting For The Sun"</p>
+					<p class="price">4400 грн</p>
+					<button>Замовити</button>
+				</div>
+				<div class="card">
+					<span class="new-label">New</span>
+					<img src="img/HardDayNight.jpg" alt="Hard Day Night">
+					<h2>The Beatles</h2>
+					<p>Платівка альбому "A Hard Day's Night"</p>
+					<p class="price">6500 грн</p>
+					<button>Замовити</button>
+				</div>
+				<div class="card">
+					<span class="new-label">New</span>
+					<img src="img/CCR_CF.jpg" alt="Cosmo`s Factory">
+					<h2>Creedence Clearwater Revival</h2>
+					<p>Платівка альбому "Cosmo's Factory".</p>
+					<p class="price">3500 грн</p>
+					<button>Замовити</button>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<div class="footer-container">
+				<div class="social-media">
+					<h3>Наші соцмережі</h3>
+					<a href="#" class="social-icon" target="_blank"><img src="img/facebook.png" class="icon">
+						Facebook</a>
+					<a href="#" class="social-icon" target="_blank"><img src="img/instagram.png" class="icon">
+						Instagram</a>
+					<a href="#" class="social-icon" target="_blank"><img src="img/youtube.png" class="icon"> Youtube</a>
+				</div>
+				<div class="footer-navigation">
+					<nav>
+						<h3>Навігація</h3>
+						<div class="nav-columns">
+							<a href="#" class="oldradio-button_footer">Головна</a>
+							<a href="#" class="oldradio-button_footer">Про нас</a>
+							<a href="#" class="oldradio-button_footer">Контакти</a>
+							<a href="#" class="oldradio-button_footer">Запитання</a>
+						</div>
+					</nav>
+				</div>
+				<div class="useful-links">
+					<h3>Корисні посилання</h3>
+					<a href="#" class="useful-link" target="_blank">Умови використання</a>
+					<a href="#" class="useful-link" target="_blank">Політика конфіденційності</a>
+					<a href="#" class="useful-link" target="_blank">Повернення товарів</a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<script>
+		document.addEventListener('DOMContentLoaded', () => {
+			const menuWrapper = document.querySelector('.mobile-menu-wrapper');
+			const menuButton = document.querySelector('.mobile-menu-button');
+			const overlay = document.querySelector('.overlay');
+
+			menuButton.addEventListener('click', () => {
+				menuWrapper.classList.toggle('active');
+			});
+
+			overlay.addEventListener('click', () => {
+				menuWrapper.classList.remove('active');
+			});
+		});
+	</script>
+
+</body>
+
+</html>
